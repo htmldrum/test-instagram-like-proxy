@@ -1,0 +1,13 @@
+doctype html
+head
+  title #{title}
+  link(rel='stylesheet', href='/stylesheets/style.css')
+body
+  h1 #{title}
+  p Enter the name to search for.
+
+  form(action='/search_result', method='get')
+    label Name
+    input(type='text', name='name')
+    input(type='hidden', name='source', value='web')
+    input(type='submit', value='Search')
