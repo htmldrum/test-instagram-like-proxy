@@ -1,0 +1,24 @@
+doctype html
+head
+  title #{title}
+  link(rel='stylesheet', href='/stylesheets/style.css')
+body
+  h1 #{title}
+  p Enter the name to search for.
+
+  form(action='/skill_search_result', method='get')
+    label Skills
+    ul
+      li
+        input( type='checkbox', name='skills', value='Nunchucks' )
+        label Nunchucks
+      li
+        input( type='checkbox', name='skills', value='Hacking' )
+        label Hacking
+      li
+        input( type='checkbox', name='skills', value='Dancing' )
+        label Dancing
+      li
+        input( type='checkbox', name='skills', value='Shooting' )
+        label Shooting
+    input( type='submit', value='Search' )

@@ -5,6 +5,12 @@ html
     link(rel='stylesheet', href='stylesheets/style.css')
   body 
     #content
-      img( src='images/image.png' )
-      p #{message}
-      #smile
+      h1 #{ title }
+      form( enctype='multipart/form-data' action='/login', method='post')
+        div
+          label Username
+          input( type='text', name='username' )
+        div
+          label Password
+          input( type='text', name='password' )
+      

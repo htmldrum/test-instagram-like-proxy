@@ -1,12 +1,20 @@
 {
   "development" : {
     "db_host" : "localhost",
-    "db_user" : "root",
-    "db_pass" : "root"
+    "port"    : "3000",
+    "instagram" : {
+      "application_name" : "di1231231sdahsdj",
+      "website" : "http://localhost:3000/",
+      "oauth_redirect_url" : "http://localhost:3000/handleauth",
+      "client_secret" : "6f50712aa5b84a058bf70251556fe1d5",
+      "client_id" : "1fb8aefad6d24f2f9adf2e766fede47c"
+    },
+    "session_secret" : "SW-_yup%^$#12341-_AGGINS"
   },
   "production" : {
     "db_host" : "192.168.1.9",
     "db_user" : "myappdb",
-    "db_pass" : "!p4ssw0rd#"
+    "db_pass" : "!p4ssw0rd#",
+    "port"    : "80"
   }
 }

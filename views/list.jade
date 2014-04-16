@@ -1,0 +1,10 @@
+doctype html
+head
+  title #{title}
+  link(rel='stylesheet', href='/stylesheets/style.css')
+body
+  h1 #{title}
+  p #{ user }
+  h1 Likes
+  each media, index in medias 
+    img( src=media )

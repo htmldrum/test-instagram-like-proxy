@@ -1,0 +1,20 @@
+doctype html
+head
+  title #{title}
+  link(rel='stylesheet', href='/stylesheets/style.css')
+body
+  h1 #{title}
+  p Enter the name to search for.
+
+  form( enctype='multipart/form-data' action='/signupwithimg', method='post')
+    div
+      label Name
+      input( type='text', name='name')
+    div
+      label Email
+      input( type='text', name='email')
+    div
+      label Profile Image
+      input( type='file', name='profile_image')
+    div
+      input( type='submit', value='Sign Up' )
