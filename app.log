@@ -1,5 +1,11 @@
-GET / 200 168 - 357 ms
-GET /stylesheets/style.css 304 - - 5 ms
-GET /authorize_user 302 520 - 12 ms
-GET /handleauth?code=bd96f27f9621437faa2e24597fb25a7e&state=a+state 302 58 - 210 ms
-GET / 200 18448 - 155 ms
+GET / 200 168 - 347 ms
+GET /stylesheets/style.css 304 - - 7 ms
+GET /authorize_user 302 520 - 4 ms
+GET /handleauth?code=1b345505d9b247369f7722728c324eaf&state=a+state 302 58 - 210 ms
+GET / 200 447 - 171 ms
+GET /stylesheets/style.css 304 - - 2 ms
+GET / 200 19325 - 145 ms
+GET /stylesheets/style.css 304 - - 2 ms
+GET / 500 1930 - 158 ms
+GET / 200 19227 - 142 ms
+GET /stylesheets/style.css 304 - - 1 ms

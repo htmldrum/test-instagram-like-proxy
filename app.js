@@ -100,16 +100,11 @@ app.get( '/', function( req, res ){
 
   } else {
 
-    console.log(' ig_likes' );
     api.user_self_liked( [], function(err, medias, pagination, limit){
 
-      console.log( 'err', err );
-      console.log( 'medias', medias[0].images.thumbnail.url );
-      console.log( 'pagination', pagination );
-      console.log( 'limit', limit );
-
-      res.json({
-        media : medias,
+      res.render( 'likes', {
+        title : 'Likes',
+        likes : medias,
         pagination : pagination,
         limit : limit
       });

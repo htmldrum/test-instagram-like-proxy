@@ -1,0 +1,17 @@
+doctype html
+head
+  title #{title}
+  link(rel='stylesheet', href='/stylesheets/style.css')
+body
+  h1 #{title}
+  h1 #{ 'Images Only' }
+  for media in likes
+    if media.type === 'image'
+      img( src = media.images.standard_resolution.url )
+      - var tojson = JSON.stringify( media )
+      p #{ tojson }
+  h1 #{ 'Videos Only' }
+  for media in likes
+    if media.type === 'video'
+      - var tojson = JSON.stringify( media )
+      p #{ tojson }
